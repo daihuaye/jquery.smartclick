@@ -12,6 +12,8 @@ Installation
 
 How to use
 ===============
++ html tree elements:
+>
 ```html
 <div class="className">
     <div class="className2">
@@ -20,6 +22,8 @@ How to use
 </div>
 ```
 
++ bind the elements you want to bind and get what you expected
+>
 ```javascript
 $(".className").smartclick({
     onClick: function(target, event) {
