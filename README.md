@@ -18,13 +18,13 @@ bower install jquery.smartclick --save-dev
 1. Include jQuery if you haven't:
 
 	```html
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	```
 
 2. Include plugin's code:
 
 	```html
-		<script src="dist/jquery.boilerplate.min.js"></script>
+	<script src="dist/jquery.boilerplate.min.js"></script>
 	```
 
 ##Example
