@@ -5,14 +5,25 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src="../src/jquery.smartclick.js"></script>
         <style>
-            .d1{background-color:green;position:relative;width:150px;height:150px;text-align:center;cursor:pointer;}.d2{background-color:blue;position:absolute;top:25px;left:25px;width:100px;height:100px;}.d3{background-color:red;position:absolute;top:25px;left:25px;width:50px;height:50px;line-height:50px;}
+            .d1, .s1{background-color:green;position:relative;width:150px;height:150px;text-align:center;cursor:pointer;}
+            .d2, .s2{background-color:blue;position:absolute;top:25px;left:25px;width:100px;height:100px;}
+            .d3, .s3{background-color:red;position:absolute;top:25px;left:25px;width:50px;height:50px;line-height:50px;}
         </style>
 	</head>
 	<body>
+        <h1>Let see the difference</h1>
+        <h2>Demo: jQuery.click binding on the outer div 1, try to click on the inner div 3</h2>
+        <div class="d1">1
+            <div class="d2">2
+                <div class="d3">3
+                </div>
+            </div>
+        </div>
 
-        <div class="jqClick d1">1
-            <div class="jqClick d2">2
-                <div class="jqClick d3">3
+        <h2>Compare: smartclick binding on the outer div 1, try to click on the inner div 3</h2>
+        <div class="s1">1
+            <div class="s2">2
+                <div class="s3">3
                 </div>
             </div>
         </div>
@@ -20,22 +31,18 @@
 		<div id="element"></div>
 		<script>
 			$(function() {
-                // $('.d1').click(function(e) {
-                //     var target = e.target || e.srcElement
+                $('.d1').click(function(e) {
+                    var target = e.target || e.srcElement
+                    this.style.backgroundColor='yellow'
+                    alert("target: "+target.className+" expected: d1")
+                    this.style.backgroundColor = ''
+                });
 
-                //     this.style.backgroundColor='yellow'
-
-                //     alert("target = "+target.className+", this="+this.className)
-
-                //     this.style.backgroundColor = ''
-                // });
-
-				$(".jqClick").smartclick({
+				$(".s1").smartclick({
                     onClick: function(e, event) {
                         e.style.backgroundColor='yellow'
-                        alert("target = " + e.className + ", this=" + e.className)
+                        alert("target: " + e.className+" expected: s1")
                         e.style.backgroundColor=''
-                        // event.stopPropagation()
                     }
 				});
 			});
