@@ -4,6 +4,9 @@ smartclick is to solve one issue from jquery click event, which is return Event 
 ##Why I build it
 When event is caught by click event listener, the default expection is the element I binded at. However, jQuery doesn't do that for me. And they just expect ```this``` could do replace the current element, however, most of time I use this to represent current Object/module. So I build smartclick to return expected element from 
 
+##Demo
+[live code](http://embed.plnkr.co/XqyVfHEiEst4kZKvQt5i/preview)
+
 ##Installation
 ```shell 
 bower install jquery.smartclick
