@@ -1,21 +1,35 @@
 {
-	"name": "jquery.smartclick",
-	"version": "1.0.0",
-	"homepage": "",
-	"authors": [
-		"Daihua Ye <daihua.ye@gmail.com>"
-	],
-	"description": "",
-	"main": "",
-    "dependencies": {
-        "jquery": ">= 1.9.x"
-    },
-	"keywords": [
-		"jquery",
-		"plugin",
-		"boilerplate",
-		"jquery-plugin",
-		"jquery-boilerplate"
-	],
-	"license": "MIT"
+  "name": "jquery.smartclick",
+  "description": "smartclick is to solve one issue from jquery click event, which is return Event object doesn't pass back the target element where it binds from click event.",
+  "version": "1.0.1",
+  "authors": [
+    "daihua ye <daihua.ye@gmail.com>"
+  ],
+  "homepage": "https://github.com/daihuaye/jquery.smartclick",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daihuaye/jquery.smartclick"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "jquery",
+    "smartclick",
+    "jquery.smartclick",
+    "click",
+    "plugins"
+  ],
+  "main": "./dist/jquery.smartclick.min.js",
+  "dependencies": {
+    "jQuery": ">= 1.9.x"
+  },
+  "ignore": [
+    ".jshintrc",
+    "Gruntfile.js",
+    "package.json",
+    "src",
+    "demo"
+  ],
+  "devDependencies": {},
+  "private": false,
+  "license": "MIT"
 }

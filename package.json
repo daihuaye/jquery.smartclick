@@ -1,6 +1,6 @@
 {
   "name": "jquery.smartclick",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Trigger click event only on element that they bind at, not like jquery on click which target on the deepest element.",
   "keywords": [
     "jquery-plugin",
