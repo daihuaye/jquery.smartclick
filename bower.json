@@ -1,0 +1,21 @@
+{
+	"name": "jquery.smartclick",
+	"version": "1.0.0",
+	"homepage": "",
+	"authors": [
+		"Daihua Ye <daihua.ye@gmail.com>"
+	],
+	"description": "",
+	"main": "",
+    "dependencies": {
+        "jquery": ">= 1.9.x"
+    },
+	"keywords": [
+		"jquery",
+		"plugin",
+		"boilerplate",
+		"jquery-plugin",
+		"jquery-boilerplate"
+	],
+	"license": "MIT"
+}

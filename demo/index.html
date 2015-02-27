@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Boilerplate</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../src/jquery.smartclick.js"></script>
+        <style>
+            .d1{background-color:green;position:relative;width:150px;height:150px;text-align:center;cursor:pointer;}.d2{background-color:blue;position:absolute;top:25px;left:25px;width:100px;height:100px;}.d3{background-color:red;position:absolute;top:25px;left:25px;width:50px;height:50px;line-height:50px;}
+        </style>
+	</head>
+	<body>
+
+        <div class="jqClick d1">1
+            <div class="jqClick d2">2
+                <div class="jqClick d3">3
+                </div>
+            </div>
+        </div>
+
+		<div id="element"></div>
+		<script>
+			$(function() {
+                // $('.d1').click(function(e) {
+                //     var target = e.target || e.srcElement
+
+                //     this.style.backgroundColor='yellow'
+
+                //     alert("target = "+target.className+", this="+this.className)
+
+                //     this.style.backgroundColor = ''
+                // });
+
+				$(".jqClick").smartclick({
+                    onClick: function(e, event) {
+                        e.style.backgroundColor='yellow'
+                        alert("target = " + e.className + ", this=" + e.className)
+                        e.style.backgroundColor=''
+                        // event.stopPropagation()
+                    }
+				});
+			});
+		</script>
+	</body>
+</html>
