@@ -17,14 +17,12 @@ bower install jquery.smartclick --save-dev
 ##How to use
 1. Include jQuery if you haven't:
 
-	>
 	```html
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	```
 
 2. Include plugin's code:
 
-	>
 	```html
 		<script src="dist/jquery.boilerplate.min.js"></script>
 	```
@@ -32,7 +30,6 @@ bower install jquery.smartclick --save-dev
 ##Example
 + html tree elements:
 
->
 ```html
 <div class="className">
     <div class="className2">
@@ -43,7 +40,6 @@ bower install jquery.smartclick --save-dev
 
 + bind the elements you want to bind and get what you expected
 
->
 ```javascript
 $(".className").smartclick({
     onClick: function(target, event) {
